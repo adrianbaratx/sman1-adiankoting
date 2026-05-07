@@ -3,128 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title><%= @title || "SMA Negeri 1 Adiankoting" %></title>
-
-  <meta
-    name="description"
-    content="Website resmi SMA Negeri 1 Adiankoting sebagai pusat informasi sekolah, akademik, berita, galeri, pengumuman, dan kontak."
-  >
-
+  <title><%= @title || @sekolah[:nama] %></title>
+  <meta name="description" content="<%= @description || 'Website resmi SMA Negeri 1 Adiankoting.' %>">
+  <meta name="keywords" content="SMA Negeri 1 Adiankoting, sekolah, profil sekolah, akademik, berita, galeri">
+  <meta name="author" content="SMA Negeri 1 Adiankoting">
   <link rel="stylesheet" href="/css/style.css">
 </head>
-
 <body>
-
-  <div class="topbar">
-    <div class="container topbar-wrap">
-      <div class="topbar-left">
-        <span>📍 Jl. Tarutung Sibolga Km 25, Adiankoting, Tapanuli Utara</span>
-        <span>✉️ smansaadiankoting@gmail.com</span>
-      </div>
-
-      <div class="topbar-right">
-        <span>☎️ 063124311</span>
-      </div>
-    </div>
-  </div>
-
-  <header class="header">
-    <div class="container header-wrap">
-
-      <a href="/" class="brand">
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ6tGYMe084zpT6TP46Uy6zVBC3B5l0iZOIg&s"
-          alt="Logo Tut Wuri Handayani"
-        >
-
-        <div class="brand-text">
-          <h1>SMA Negeri 1 Adiankoting</h1>
-          <p>Berprestasi, Berkarakter, Berbudaya</p>
-        </div>
-      </a>
-
-      <nav class="nav">
-        <a class="<%= active_nav('/') %>" href="/">Beranda</a>
-        <a class="<%= active_nav('/profil') %>" href="/profil">Profil</a>
-        <a class="<%= active_nav('/kepala-sekolah') %>" href="/kepala-sekolah">Kepala Sekolah</a>
-        <a class="<%= active_nav('/akademik') %>" href="/akademik">Akademik</a>
-        <a class="<%= active_nav('/berita') %>" href="/berita">Berita</a>
-        <a class="<%= active_nav('/galeri') %>" href="/galeri">Galeri</a>
-        <a class="nav-cta <%= active_nav('/kontak') %>" href="/kontak">Kontak</a>
-      </nav>
-
-    </div>
-  </header>
-
-  <main>
-    <%= yield %>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-grid">
-
-      <div class="footer-about">
-        <div class="footer-brand">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ6tGYMe084zpT6TP46Uy6zVBC3B5l0iZOIg&s"
-            alt="Logo SMA Negeri 1 Adiankoting"
-          >
-
-          <div>
-            <h3>SMA Negeri 1 Adiankoting</h3>
-            <p>Sekolah unggul, berkarakter, dan berbudaya.</p>
-          </div>
-        </div>
-
-        <p>
-          Website resmi SMA Negeri 1 Adiankoting sebagai pusat informasi
-          profil sekolah, akademik, kegiatan siswa, pengumuman, galeri,
-          dan layanan komunikasi sekolah kepada masyarakat.
-        </p>
-      </div>
-
-      <div class="footer-menu">
-        <h4>Menu Website</h4>
-        <a href="/">Beranda</a>
-        <a href="/profil">Profil Sekolah</a>
-        <a href="/kepala-sekolah">Kepala Sekolah</a>
-        <a href="/akademik">Akademik</a>
-        <a href="/berita">Berita</a>
-        <a href="/galeri">Galeri</a>
-        <a href="/kontak">Kontak</a>
-      </div>
-
-      <div class="footer-contact">
-        <h4>Kontak Sekolah</h4>
-
-        <p>
-          <strong>Alamat</strong>
-          <span>Jl. Tarutung Sibolga Km 25, Adiankoting, Tapanuli Utara</span>
-        </p>
-
-        <p>
-          <strong>Email</strong>
-          <span>smansaadiankoting@gmail.com</span>
-        </p>
-
-        <p>
-          <strong>Telepon</strong>
-          <span>063124311</span>
-        </p>
-
-        <p>
-          <strong>Jam Layanan</strong>
-          <span>Senin - Jumat, 08.00 - 16.00 WIB</span>
-        </p>
-      </div>
-
-    </div>
-
-    <div class="footer-bottom">
-      <p>&copy; 2026 SMA Negeri 1 Adiankoting. All Rights Reserved.</p>
-    </div>
-  </footer>
-
+  <%= component :_preloader %>
+  <%= component :_header %>
+  <main><%= yield %></main>
+  <%= component :_footer %>
+  <script src="/js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,36 @@
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-about">
+      <div class="footer-brand">
+        <img src="<%= @sekolah[:logo] %>" alt="Logo SMA Negeri 1 Adiankoting">
+        <div>
+          <h3><%= @sekolah[:nama] %></h3>
+          <p><%= @sekolah[:slogan] %></p>
+        </div>
+      </div>
+      <p>Website resmi sekolah sebagai pusat informasi profil, akademik, kegiatan siswa, pengumuman, galeri, dan layanan komunikasi kepada masyarakat.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Menu Website</h4>
+      <a href="/">Beranda</a>
+      <a href="/profil">Profil Sekolah</a>
+      <a href="/kepala-sekolah">Kepala Sekolah</a>
+      <a href="/akademik">Akademik</a>
+      <a href="/berita">Berita</a>
+      <a href="/galeri">Galeri</a>
+      <a href="/kontak">Kontak</a>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Kontak Sekolah</h4>
+      <p><b>Alamat</b><span><%= @sekolah[:alamat] %></span></p>
+      <p><b>Email</b><span><%= @sekolah[:email] %></span></p>
+      <p><b>Telepon</b><span><%= @sekolah[:telepon] %></span></p>
+      <p><b>Jam Layanan</b><span><%= @sekolah[:jam] %></span></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 <%= @sekolah[:nama] %>. All Rights Reserved.</p>
+  </div>
+</footer>

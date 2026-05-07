@@ -1,0 +1,9 @@
+<article class="news-card reveal" data-title="<%= item[:judul].downcase %>" data-category="<%= item[:kategori].downcase %>">
+  <figure class="news-image"><img src="<%= item[:gambar] %>" alt="<%= item[:judul] %>"></figure>
+  <div class="news-content">
+    <div class="news-meta"><span><%= item[:tanggal] %></span><span><%= item[:kategori] %></span></div>
+    <h3><%= item[:judul] %></h3>
+    <p><%= item[:isi] %></p>
+    <a href="#">Baca selengkapnya →</a>
+  </div>
+</article>

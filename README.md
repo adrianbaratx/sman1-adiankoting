@@ -1,22 +1,22 @@
-# Website SMA Negeri 1 Adiankoting - Ruby Sinatra
+# SMA Negeri 1 Adiankoting
 
-Website sekolah berbasis Ruby Sinatra dengan desain professional dan responsive.
+Website sekolah berbasis Ruby Sinatra dengan halaman terpisah, component, data dummy, CSS professional, JavaScript, dan preloader.
 
-## Cara menjalankan di lokal
+## Jalankan Lokal
 
 ```bat
-cd /d D:\UNPRI\sma\sman1_adiankoting_ruby
+cd /d D:\UNPRI\sma\sman1_adiankoting_ruby_best
 bundle install
 bundle exec ruby app.rb
 ```
 
-Buka browser:
+Buka:
 
 ```text
 http://localhost:4567
 ```
 
-## Deploy ke Render
+## Deploy Render
 
 Build command:
 
@@ -29,5 +29,3 @@ Start command:
 ```bash
 bundle exec rackup -p $PORT -o 0.0.0.0
 ```
-
-Catatan: GitHub Pages tidak menjalankan Ruby/Sinatra. Simpan kode di GitHub, lalu deploy ke Render/Railway/Fly.io/VPS.

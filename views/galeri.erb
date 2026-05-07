@@ -1,20 +1,15 @@
-<% @title = "Galeri - SMA Negeri 1 Adiankoting" %>
-
 <section class="page-hero">
-  <div class="container">
+  <div class="container page-hero-inner reveal">
     <span class="eyebrow light">Galeri Sekolah</span>
-    <h2>Dokumentasi Kegiatan</h2>
-    <p>Beberapa dokumentasi suasana belajar dan kegiatan siswa di sekolah.</p>
+    <h1>Dokumentasi Kegiatan</h1>
+    <p>Dokumentasi suasana belajar dan kegiatan siswa di SMA Negeri 1 Adiankoting.</p>
   </div>
 </section>
 
-<section class="section gallery-section">
+<section class="section-pad">
   <div class="container gallery-grid">
-    <div class="gallery-item gal-one"><span>Kegiatan Belajar</span></div>
-    <div class="gallery-item gal-two"><span>Upacara Sekolah</span></div>
-    <div class="gallery-item gal-three"><span>Ekstrakurikuler</span></div>
-    <div class="gallery-item gal-four"><span>Prestasi Siswa</span></div>
-    <div class="gallery-item gal-five"><span>Lingkungan Sekolah</span></div>
-    <div class="gallery-item gal-six"><span>Kegiatan Literasi</span></div>
+    <% @galeri.each do |item| %>
+      <figure class="gallery-card reveal"><img src="<%= item[:gambar] %>" alt="<%= item[:judul] %>"><figcaption><%= item[:judul] %></figcaption></figure>
+    <% end %>
   </div>
 </section>

@@ -1,0 +1,31 @@
+<div class="topbar">
+  <div class="container topbar-inner">
+    <div class="topbar-group">
+      <span>📍 <%= @sekolah[:alamat] %></span>
+      <span>✉️ <%= @sekolah[:email] %></span>
+    </div>
+    <span>☎️ <%= @sekolah[:telepon] %></span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="brand" aria-label="Beranda SMA Negeri 1 Adiankoting">
+      <span class="brand-logo"><img src="<%= @sekolah[:logo] %>" alt="Logo Tut Wuri Handayani"></span>
+      <span class="brand-text">
+        <strong><%= @sekolah[:nama] %></strong>
+        <small><%= @sekolah[:slogan] %></small>
+      </span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a class="<%= active_nav('/') %>" href="/">Beranda</a>
+      <a class="<%= active_nav('/profil') %>" href="/profil">Profil</a>
+      <a class="<%= active_nav('/kepala-sekolah') %>" href="/kepala-sekolah">Kepala Sekolah</a>
+      <a class="<%= active_nav('/akademik') %>" href="/akademik">Akademik</a>
+      <a class="<%= active_nav('/berita') %>" href="/berita">Berita</a>
+      <a class="<%= active_nav('/galeri') %>" href="/galeri">Galeri</a>
+      <a class="nav-cta <%= active_nav('/kontak') %>" href="/kontak">Kontak</a>
+    </nav>
+  </div>
+</header>

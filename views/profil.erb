@@ -1,306 +1,46 @@
-<section class="page-hero profile-hero">
-  <div class="container page-hero-content">
-    <span class="eyebrow">Profil Sekolah</span>
-    <h2>Profil SMA Negeri 1 Adiankoting</h2>
-    <p>
-      Mengenal lebih dekat identitas, sejarah, visi, misi, dan komitmen
-      SMA Negeri 1 Adiankoting dalam menyelenggarakan pendidikan bermutu.
-    </p>
+<section class="page-hero">
+  <div class="container page-hero-inner reveal">
+    <span class="eyebrow light">Profil Sekolah</span>
+    <h1>Profil SMA Negeri 1 Adiankoting</h1>
+    <p>Mengenal identitas, sejarah, visi, misi, dan komitmen SMA Negeri 1 Adiankoting dalam menyelenggarakan pendidikan bermutu.</p>
   </div>
 </section>
 
-<section class="section">
-  <div class="container profile-overview">
-    <div class="profile-main-card">
+<section class="section-pad">
+  <div class="container split-grid">
+    <div class="content-panel reveal">
       <span class="eyebrow">Tentang Sekolah</span>
-
       <h2>SMA Negeri 1 Adiankoting</h2>
+      <p>SMA Negeri 1 Adiankoting merupakan satuan pendidikan jenjang Sekolah Menengah Atas negeri yang berada di Kecamatan Adiankoting, Kabupaten Tapanuli Utara, Provinsi Sumatera Utara.</p>
+      <p>Sekolah ini berkomitmen membentuk peserta didik yang berprestasi, berkarakter, beriman, berbudaya, dan siap menghadapi perkembangan zaman.</p>
 
-      <p>
-        SMA Negeri 1 Adiankoting merupakan satuan pendidikan jenjang Sekolah
-        Menengah Atas negeri yang berada di Kecamatan Adiankoting, Kabupaten
-        Tapanuli Utara, Provinsi Sumatera Utara. Sekolah ini hadir sebagai
-        lembaga pendidikan yang berperan dalam membentuk peserta didik yang
-        berprestasi, berkarakter, beriman, berbudaya, dan siap menghadapi
-        perkembangan zaman.
-      </p>
+      <h3>Sejarah Singkat</h3>
+      <p>SMA Negeri 1 Adiankoting berdiri berdasarkan SK Pendirian Sekolah Nomor 217/O/2000 dengan tanggal SK Pendirian 17 November 2000. Sejak berdiri, sekolah ini menjadi salah satu pusat layanan pendidikan menengah atas bagi masyarakat Kecamatan Adiankoting dan sekitarnya.</p>
 
-      <p>
-        Sebagai sekolah negeri di bawah naungan pemerintah daerah, SMA Negeri 1
-        Adiankoting terus berupaya meningkatkan kualitas layanan pendidikan
-        melalui proses pembelajaran yang aktif, pembinaan karakter, penguatan
-        literasi, serta pengembangan potensi akademik dan non-akademik siswa.
-      </p>
-
-      <div class="profile-highlight-grid">
-        <div class="profile-highlight">
-          <strong>A</strong>
-          <span>Akreditasi</span>
-        </div>
-
-        <div class="profile-highlight">
-          <strong>10206129</strong>
-          <span>NPSN</span>
-        </div>
-
-        <div class="profile-highlight">
-          <strong>2000</strong>
-          <span>Tahun Pendirian</span>
-        </div>
-      </div>
+      <h3>Visi Sekolah</h3>
+      <p>Terwujudnya peserta didik yang unggul dalam prestasi, berkarakter, beriman, berbudaya, dan mampu menghadapi perkembangan ilmu pengetahuan serta teknologi.</p>
     </div>
 
-    <div class="profile-side-card">
+    <aside class="identity-panel reveal">
       <h3>Identitas Sekolah</h3>
-
-      <div class="identity-row">
-        <span>Nama Sekolah</span>
-        <strong>SMA Negeri 1 Adiankoting</strong>
-      </div>
-
-      <div class="identity-row">
-        <span>NPSN</span>
-        <strong>10206129</strong>
-      </div>
-
-      <div class="identity-row">
-        <span>Jenjang Pendidikan</span>
-        <strong>SMA</strong>
-      </div>
-
-      <div class="identity-row">
-        <span>Status Sekolah</span>
-        <strong>Negeri</strong>
-      </div>
-
-      <div class="identity-row">
-        <span>Status Kepemilikan</span>
-        <strong>Pemerintah Daerah</strong>
-      </div>
-
-      <div class="identity-row">
-        <span>Akreditasi</span>
-        <strong>A</strong>
-      </div>
-
-      <div class="identity-row">
-        <span>Alamat</span>
-        <strong>Jl. Tarutung Sibolga Km 25, Adiankoting, Tapanuli Utara</strong>
-      </div>
-    </div>
+      <div><span>Nama Sekolah</span><b><%= @sekolah[:nama] %></b></div>
+      <div><span>NPSN</span><b><%= @sekolah[:npsn] %></b></div>
+      <div><span>Jenjang</span><b>SMA</b></div>
+      <div><span>Status</span><b>Negeri</b></div>
+      <div><span>Akreditasi</span><b><%= @sekolah[:akreditasi] %></b></div>
+      <div><span>Alamat</span><b><%= @sekolah[:alamat] %></b></div>
+    </aside>
   </div>
 </section>
 
-<section class="section soft-section">
-  <div class="container history-grid">
-    <div class="history-content">
-      <span class="eyebrow">Sejarah Singkat</span>
-
-      <h2>Perjalanan SMA Negeri 1 Adiankoting</h2>
-
-      <p>
-        SMA Negeri 1 Adiankoting berdiri berdasarkan SK Pendirian Sekolah
-        Nomor <strong>217/O/2000</strong> dengan tanggal SK Pendirian
-        <strong>17 November 2000</strong>. Sejak berdiri, sekolah ini menjadi
-        salah satu pusat layanan pendidikan menengah atas bagi masyarakat
-        Kecamatan Adiankoting dan sekitarnya.
-      </p>
-
-      <p>
-        Dalam perjalanannya, SMA Negeri 1 Adiankoting terus berkembang sebagai
-        tempat belajar yang mendukung pembentukan karakter, kedisiplinan,
-        tanggung jawab, serta semangat berprestasi bagi peserta didik.
-        Sekolah juga berupaya menyesuaikan diri dengan perkembangan ilmu
-        pengetahuan, teknologi, dan kebutuhan pendidikan masa kini.
-      </p>
-
-      <p>
-        Dengan dukungan guru, tenaga kependidikan, peserta didik, orang tua,
-        alumni, dan masyarakat, SMA Negeri 1 Adiankoting berkomitmen untuk
-        terus meningkatkan mutu pendidikan dan memberikan layanan terbaik bagi
-        seluruh warga sekolah.
-      </p>
-    </div>
-
-    <div class="history-timeline">
-      <h3>Ringkasan Data</h3>
-
-      <div class="timeline-item">
-        <span>2000</span>
-        <div>
-          <strong>Pendirian Sekolah</strong>
-          <p>SK Pendirian Nomor 217/O/2000, tanggal 17 November 2000.</p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <span>SMA</span>
-        <div>
-          <strong>Jenjang Pendidikan</strong>
-          <p>Satuan pendidikan jenjang Sekolah Menengah Atas.</p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <span>A</span>
-        <div>
-          <strong>Akreditasi Sekolah</strong>
-          <p>Terakreditasi A sebagai bentuk komitmen terhadap mutu pendidikan.</p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <span>Negeri</span>
-        <div>
-          <strong>Status Sekolah</strong>
-          <p>Sekolah negeri di bawah naungan pemerintah daerah.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container section-heading">
+<section class="section-pad section-soft">
+  <div class="container section-title reveal">
     <span class="eyebrow">Arah Pendidikan</span>
     <h2>Visi dan Misi Sekolah</h2>
-    <p>
-      Visi dan misi menjadi landasan dalam membangun budaya sekolah yang
-      unggul, berkarakter, dan berorientasi pada masa depan peserta didik.
-    </p>
+    <p>Menjadi landasan dalam membangun budaya sekolah yang unggul dan berkarakter.</p>
   </div>
-
-  <div class="container vision-grid">
-    <div class="vision-card">
-      <div class="vision-icon">🎯</div>
-      <h3>Visi Sekolah</h3>
-      <p>
-        Terwujudnya peserta didik yang unggul dalam prestasi, berkarakter,
-        beriman, berbudaya, dan mampu menghadapi perkembangan ilmu pengetahuan
-        serta teknologi.
-      </p>
-    </div>
-
-    <div class="vision-card">
-      <div class="vision-icon">🌱</div>
-      <h3>Misi Sekolah</h3>
-
-      <ul class="check-list">
-        <li>Menyelenggarakan pembelajaran yang aktif, kreatif, efektif, dan bermutu.</li>
-        <li>Membina peserta didik agar disiplin, santun, jujur, dan bertanggung jawab.</li>
-        <li>Mengembangkan potensi akademik dan non-akademik siswa secara optimal.</li>
-        <li>Menanamkan nilai-nilai iman, takwa, budaya, dan budi pekerti luhur.</li>
-        <li>Meningkatkan budaya literasi, kerja sama, dan kepedulian sosial.</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section class="section soft-section">
-  <div class="container section-heading">
-    <span class="eyebrow">Keunggulan Sekolah</span>
-    <h2>Komitmen Layanan Pendidikan</h2>
-    <p>
-      SMA Negeri 1 Adiankoting berupaya menghadirkan lingkungan pendidikan
-      yang mendukung prestasi, karakter, dan pengembangan bakat siswa.
-    </p>
-  </div>
-
-  <div class="container excellence-grid">
-    <div class="excellence-card">
-      <div class="icon">📘</div>
-      <h3>Pembelajaran Bermutu</h3>
-      <p>
-        Proses pembelajaran diarahkan untuk meningkatkan pemahaman,
-        keterampilan, literasi, dan kemampuan berpikir kritis peserta didik.
-      </p>
-    </div>
-
-    <div class="excellence-card">
-      <div class="icon">🤝</div>
-      <h3>Pembinaan Karakter</h3>
-      <p>
-        Sekolah membangun budaya disiplin, tanggung jawab, sopan santun,
-        kerja sama, dan kepedulian terhadap sesama.
-      </p>
-    </div>
-
-    <div class="excellence-card">
-      <div class="icon">🏆</div>
-      <h3>Pengembangan Prestasi</h3>
-      <p>
-        Peserta didik didorong untuk mengembangkan potensi dalam bidang
-        akademik, seni, olahraga, organisasi, dan kegiatan lainnya.
-      </p>
-    </div>
-
-    <div class="excellence-card">
-      <div class="icon">🌐</div>
-      <h3>Informasi Terbuka</h3>
-      <p>
-        Website sekolah menjadi media informasi untuk memperkuat komunikasi
-        antara sekolah, siswa, orang tua, alumni, dan masyarakat.
-      </p>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container facility-grid">
-    <div class="facility-content">
-      <span class="eyebrow">Fasilitas & Lingkungan</span>
-
-      <h2>Lingkungan Sekolah yang Mendukung Pembelajaran</h2>
-
-      <p>
-        SMA Negeri 1 Adiankoting berupaya menyediakan lingkungan belajar yang
-        aman, nyaman, tertib, dan mendukung aktivitas akademik maupun
-        non-akademik siswa.
-      </p>
-
-      <ul class="check-list">
-        <li>Ruang belajar untuk kegiatan pembelajaran siswa.</li>
-        <li>Perpustakaan sebagai pendukung kegiatan literasi.</li>
-        <li>Kegiatan ekstrakurikuler untuk mengembangkan minat dan bakat.</li>
-        <li>Lingkungan sekolah yang mendukung pembinaan karakter.</li>
-        <li>Layanan informasi sekolah melalui media website.</li>
-      </ul>
-    </div>
-
-    <div class="facility-card">
-      <h3>Informasi Kontak</h3>
-
-      <div class="contact-mini">
-        <strong>Alamat</strong>
-        <span>Jl. Tarutung Sibolga Km 25, Adiankoting, Tapanuli Utara</span>
-      </div>
-
-      <div class="contact-mini">
-        <strong>Email</strong>
-        <span>smansaadiankoting@gmail.com</span>
-      </div>
-
-      <div class="contact-mini">
-        <strong>Telepon</strong>
-        <span>063124311</span>
-      </div>
-
-      <a href="/kontak" class="btn primary">Hubungi Sekolah</a>
-    </div>
-  </div>
-</section>
-
-<section class="profile-cta">
-  <div class="container profile-cta-card">
-    <div>
-      <span class="eyebrow">Informasi Sekolah</span>
-      <h2>Butuh informasi lebih lanjut?</h2>
-      <p>
-        Silakan hubungi pihak sekolah untuk informasi akademik, administrasi,
-        penerimaan peserta didik baru, atau layanan lainnya.
-      </p>
-    </div>
-
-    <a href="/kontak" class="btn primary">Kontak Sekolah</a>
+  <div class="container two-card-grid">
+    <div class="content-panel reveal"><h3>Visi</h3><p>Terwujudnya peserta didik yang unggul dalam prestasi, berkarakter, beriman, berbudaya, dan mampu menghadapi perkembangan ilmu pengetahuan serta teknologi.</p></div>
+    <div class="content-panel reveal"><h3>Misi</h3><ul class="check-list"><li>Menyelenggarakan pembelajaran aktif, kreatif, efektif, dan bermutu.</li><li>Membina peserta didik agar disiplin, santun, jujur, dan bertanggung jawab.</li><li>Mengembangkan potensi akademik dan non-akademik siswa secara optimal.</li><li>Menanamkan nilai iman, takwa, budaya, dan budi pekerti luhur.</li></ul></div>
   </div>
 </section>

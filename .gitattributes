@@ -1,0 +1,4 @@
+*.rb linguist-language=Ruby
+*.erb linguist-language=Ruby
+*.css linguist-vendored
+*.js linguist-vendored
